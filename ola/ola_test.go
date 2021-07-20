@@ -18,9 +18,9 @@ func TestOla(t *testing.T) {
 		verificaMensagemCorreta(t, resultado, esperado)
 	})
 
-	t.Run("Diz 'Olá, mundo' quando uma string vazia for passada", func(t *testing.T) {
+	t.Run("Diz 'Olá, Mundo' quando uma string vazia for passada", func(t *testing.T) {
 		resultado := Ola("")
-		esperado := "Olá, mundo"
+		esperado := "Olá, Mundo"
 
 		verificaMensagemCorreta(t, resultado, esperado)
 	})
