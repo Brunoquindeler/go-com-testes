@@ -34,5 +34,5 @@ func prefixoDeSaudacao(idioma string) (prefixo string) {
 }
 
 func main() {
-	fmt.Println(Ola("mundo", ""))
+	fmt.Println(Ola("Bruno", ""))
 }
