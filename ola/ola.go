@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package ola
 
 const (
 	prefixoOlaPortugues = "Olá, "
@@ -31,8 +29,4 @@ func prefixoDeSaudacao(idioma string) (prefixo string) {
 		prefixo = prefixoOlaPortugues
 	}
 	return
-}
-
-func main() {
-	fmt.Println(Ola("Bruno", ""))
 }
