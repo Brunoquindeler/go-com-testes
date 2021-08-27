@@ -13,13 +13,13 @@ func main() {
 	fmt.Println("--------------------")
 
 	fmt.Println("--- Olá ---")
-	fmt.Println(ola.Ola("Bruno", ""))
-	fmt.Println(ola.Ola("Bruno", "fr"))
-	fmt.Println(ola.Ola("Bruno", "esp"))
+	fmt.Println(ola.Ola("Bruno", ""))    // Olá, Bruno!!!
+	fmt.Println(ola.Ola("Bruno", "fr"))  // Bonjour, Bruno!!!
+	fmt.Println(ola.Ola("Bruno", "esp")) // Hola, Bruno!!!
 
 	fmt.Println("--------------------")
 
 	fmt.Println("--- Inteiros ---")
-	fmt.Println("2 + 2:", inteiros.Adiciona(2, 2))
+	fmt.Println("2 + 2:", inteiros.Adiciona(2, 2)) // 2 + 2: 4
 
 }
