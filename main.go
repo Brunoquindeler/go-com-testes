@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/Brunoquindeler/go-com-testes/inteiros"
+	"github.com/Brunoquindeler/go-com-testes/iteracao"
 	"github.com/Brunoquindeler/go-com-testes/ola"
 )
 
@@ -21,4 +22,9 @@ func main() {
 
 	fmt.Println("--- Inteiros ---")
 	fmt.Println("2 + 2:", inteiros.Adiciona(2, 2)) // 2 + 2: 4
+
+	fmt.Println("--------------------")
+
+	fmt.Println("--- Iteração ---")
+	fmt.Println(iteracao.Repetidor("k", 5)) // kkkkk
 }
