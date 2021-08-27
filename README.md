@@ -6,3 +6,5 @@
 ![Lines of code](https://img.shields.io/tokei/lines/github/Brunoquindeler/go-com-testes)
 
 [GitBook](https://larien.gitbook.io/aprenda-go-com-testes/)
+
+![Red Green Refactor](assets/red-green-blue-gophers-smaller.png)
