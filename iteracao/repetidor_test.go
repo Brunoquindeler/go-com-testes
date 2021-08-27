@@ -7,6 +7,6 @@ func TestRepetidor(t *testing.T) {
 	esperado := "aaaaa"
 
 	if repeticoes != esperado {
-		t.Errorf("Esperado: %v 	|	Obtido: %v", esperado, repeticoes)
+		t.Errorf("\nEsperado: %v\nObtido: %v", esperado, repeticoes)
 	}
 }
