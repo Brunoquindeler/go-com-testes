@@ -6,8 +6,8 @@ import (
 )
 
 func TestRepetidor(t *testing.T) {
-	repeticoes := Repetidor("a", 5)
-	esperado := "aaaaa"
+	repeticoes := Repetidor("k", 5)
+	esperado := "kkkkk"
 
 	if repeticoes != esperado {
 		t.Errorf("\nEsperado: %v\nObtido: %v", esperado, repeticoes)
@@ -16,12 +16,12 @@ func TestRepetidor(t *testing.T) {
 
 func BenchmarkRepetidor(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Repetidor("a", 5)
+		Repetidor("k", 5)
 	}
 }
 
 func ExampleRepetidor() {
-	r := Repetidor("a", 5)
+	r := Repetidor("k", 5)
 	fmt.Println(r)
-	// Output: aaaaa
+	// Output: kkkkk
 }

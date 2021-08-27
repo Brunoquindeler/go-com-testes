@@ -21,5 +21,4 @@ func main() {
 
 	fmt.Println("--- Inteiros ---")
 	fmt.Println("2 + 2:", inteiros.Adiciona(2, 2)) // 2 + 2: 4
-
 }
