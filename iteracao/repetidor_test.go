@@ -1,9 +1,12 @@
 package iteracao
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestRepetidor(t *testing.T) {
-	repeticoes := Repeditor("a", 5)
+	repeticoes := Repetidor("a", 5)
 	esperado := "aaaaa"
 
 	if repeticoes != esperado {
@@ -13,6 +16,12 @@ func TestRepetidor(t *testing.T) {
 
 func BenchmarkRepetidor(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Repeditor("a", 5)
+		Repetidor("a", 5)
 	}
+}
+
+func ExampleRepetidor() {
+	r := Repetidor("a", 5)
+	fmt.Println(r)
+	// Output: aaaaa
 }
