@@ -3,8 +3,8 @@ package arrayseslices
 func ArraySomador(numeros [5]int) int {
 	total := 0
 
-	for i := 0; i < 5; i++ {
-		total += numeros[i]
+	for _, numero := range numeros {
+		total += numero
 	}
 	return total
 }
