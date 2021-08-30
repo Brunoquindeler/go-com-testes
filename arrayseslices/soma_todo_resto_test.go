@@ -7,6 +7,13 @@ import (
 
 func TestSomaTodoResto(t *testing.T) {
 
+	verificaTotal := func(t *testing.T, slice1, slice2, esperado, obtido []int) {
+		t.Helper()
+		if !reflect.DeepEqual(esperado, obtido) {
+			t.Errorf("\nDado: %v %v \nEsperado: %v \nObtido: %v", slice1, slice2, esperado, obtido)
+		}
+	}
+
 	t.Run("Soma alguns slices", func(t *testing.T) {
 		slice1 := []int{1, 2}
 		slice2 := []int{0, 9}
@@ -15,9 +22,7 @@ func TestSomaTodoResto(t *testing.T) {
 
 		obtido := SomaTodoResto(slice1, slice2)
 
-		if !reflect.DeepEqual(esperado, obtido) {
-			t.Errorf("\nDado: %v %v \nEsperado: %v \nObtido: %v", slice1, slice2, esperado, obtido)
-		}
+		verificaTotal(t, slice1, slice2, esperado, obtido)
 	})
 
 	t.Run("Soma alguns slices vazios de forma segura", func(t *testing.T) {
@@ -28,9 +33,8 @@ func TestSomaTodoResto(t *testing.T) {
 
 		obtido := SomaTodoResto(slice1, slice2)
 
-		if !reflect.DeepEqual(esperado, obtido) {
-			t.Errorf("\nDado: %v %v \nEsperado: %v \nObtido: %v", slice1, slice2, esperado, obtido)
-		}
+		verificaTotal(t, slice1, slice2, esperado, obtido)
+
 	})
 
 }
