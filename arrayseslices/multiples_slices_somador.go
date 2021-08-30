@@ -1,11 +1,10 @@
 package arrayseslices
 
-func MultiplesSlicesSomador(slices ...[]int) (total []int) {
-	quantidadesDeSlices := len(slices)
-	total = make([]int, quantidadesDeSlices)
+func MultiplesSlicesSomador(slices ...[]int) []int {
+	var total []int
 
-	for i, numeros := range slices {
-		total[i] = SliceSomador(numeros)
+	for _, slice := range slices {
+		total = append(total, SliceSomador(slice))
 	}
-	return
+	return total
 }
