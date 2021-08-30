@@ -10,5 +10,7 @@ func TestArraySomador(t *testing.T) {
 	obtido := ArraySomador(numeros)
 	esperado := 15
 
-	t.Errorf("\nDado: %v \nEsperado: %d \nObtido: %d", numeros, esperado, obtido)
+	if esperado != obtido {
+		t.Errorf("\nDado: %v \nEsperado: %d \nObtido: %d", numeros, esperado, obtido)
+	}
 }
