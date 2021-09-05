@@ -16,7 +16,7 @@ func TestArea(t *testing.T) {
 	t.Run("Retângulos", func(t *testing.T) {
 		retangulo := Retangulo{12.0, 6.0}
 		esperado := 72.0
-		obtido := Area(retangulo)
+		obtido := retangulo.Area()
 
 		if obtido != esperado {
 			t.Errorf("\nEsperado: %.2f \nObtido: %.2f", esperado, obtido)
@@ -26,7 +26,7 @@ func TestArea(t *testing.T) {
 	t.Run("Círculos", func(t *testing.T) {
 		circulo := Circulo{10}
 		esperado := 314.1592653589793
-		obtido := Area(circulo)
+		obtido := circulo.Area()
 
 		if obtido != esperado {
 			t.Errorf("\nEsperado: %.2f \nObtido: %.2f", esperado, obtido)
