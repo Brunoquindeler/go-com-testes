@@ -5,6 +5,10 @@ type Retangulo struct {
 	Altura  float64
 }
 
+type Circulo struct {
+	Raio float64
+}
+
 func Perimetro(retangulo Retangulo) float64 {
 	return 2 * (retangulo.Largura + retangulo.Altura)
 }
