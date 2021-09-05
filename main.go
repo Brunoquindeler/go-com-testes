@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/Brunoquindeler/go-com-testes/arrayseslices"
+	"github.com/Brunoquindeler/go-com-testes/estruturasmetodosinterfaces"
 	"github.com/Brunoquindeler/go-com-testes/inteiros"
 	"github.com/Brunoquindeler/go-com-testes/iteracao"
 	"github.com/Brunoquindeler/go-com-testes/ola"
@@ -37,4 +38,13 @@ func main() {
 	fmt.Println(arrayseslices.MultiplesSlicesSomador([]int{2, 2, 4}, []int{1, 4}))        // [8 5]
 	fmt.Println(arrayseslices.SomaTodoResto([]int{2, 2, 4}, []int{1, 4}, []int{3, 5, 4})) // [6 4 9]
 
+	fmt.Println("--------------------")
+
+	fmt.Println("--- Estruturas, Métodos e Interfaces ---")
+	retangulo := estruturasmetodosinterfaces.Retangulo{Largura: 12, Altura: 6}
+	fmt.Println(retangulo.Area()) // 72
+	circulo := estruturasmetodosinterfaces.Circulo{Raio: 10}
+	fmt.Println(circulo.Area()) // 314.1592653589793
+	triangulo := estruturasmetodosinterfaces.Triangulo{Base: 12, Altura: 6}
+	fmt.Println(triangulo.Area()) // 36
 }
