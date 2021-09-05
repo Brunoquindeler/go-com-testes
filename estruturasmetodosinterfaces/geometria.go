@@ -2,6 +2,10 @@ package estruturasmetodosinterfaces
 
 import "math"
 
+type Geometria interface {
+	Area() float64
+}
+
 type Retangulo struct {
 	Largura float64
 	Altura  float64
