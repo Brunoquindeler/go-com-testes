@@ -18,7 +18,7 @@
 | **✅ Iteração**                         | [**Link**](https://larien.gitbook.io/aprenda-go-com-testes/primeiros-passos-com-go/iteracao)                        |
 | **✅ Arrays e Slices**                  | [**Link**](https://larien.gitbook.io/aprenda-go-com-testes/primeiros-passos-com-go/arrays-e-slices)                 |
 | **✅ Estrutura, Métodos e Interfaces**  | [**Link**](https://larien.gitbook.io/aprenda-go-com-testes/primeiros-passos-com-go/estruturas-metodos-e-interfaces) |
-| **❌ Ponteiros e Erros**                | [**Link**](https://larien.gitbook.io/aprenda-go-com-testes/primeiros-passos-com-go/ponteiros-e-erros)               |
+| **✅ Ponteiros e Erros**                | [**Link**](https://larien.gitbook.io/aprenda-go-com-testes/primeiros-passos-com-go/ponteiros-e-erros)               |
 | **❌ Maps**                             | [**Link**](https://larien.gitbook.io/aprenda-go-com-testes/primeiros-passos-com-go/maps)                            |
 | **❌ Injeção de Depenência**            | [**Link**](https://larien.gitbook.io/aprenda-go-com-testes/primeiros-passos-com-go/injecao-de-dependencia)          |
 | **❌ Mocks**                            | [**Link**](https://larien.gitbook.io/aprenda-go-com-testes/primeiros-passos-com-go/mocks)                           |

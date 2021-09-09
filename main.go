@@ -8,6 +8,7 @@ import (
 	"github.com/Brunoquindeler/go-com-testes/inteiros"
 	"github.com/Brunoquindeler/go-com-testes/iteracao"
 	"github.com/Brunoquindeler/go-com-testes/ola"
+	"github.com/Brunoquindeler/go-com-testes/ponteiroseerros"
 )
 
 func main() {
@@ -47,4 +48,16 @@ func main() {
 	fmt.Println(circulo.Area()) // 314.1592653589793
 	triangulo := estruturasmetodosinterfaces.Triangulo{Base: 12, Altura: 6}
 	fmt.Println(triangulo.Area()) // 36
+
+	fmt.Println("--------------------")
+
+	fmt.Println("--- Ponteiros e Erros ---")
+	carteira := ponteiroseerros.Carteira{}
+	fmt.Println(carteira.Saldo().String())          // 0 BTC
+	carteira.Depositar(ponteiroseerros.Bitcoin(10)) // Adiciona 10 ao saldo.
+	fmt.Println(carteira.Saldo().String())          // 10 BTC
+	carteira.Sacar(ponteiroseerros.Bitcoin(5))      // Retira 5 do saldo.
+	fmt.Println(carteira.Saldo().String())          // 5 BTC
+	carteira.Sacar(ponteiroseerros.Bitcoin(50))     // Não é possível realizar essa transação e o saldopermanece o mesmo pois é insuficiente.
+	fmt.Println(carteira.Saldo().String())          // 5 BTC
 }
