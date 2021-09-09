@@ -1,6 +1,8 @@
 package ponteiroseerros
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestCarteira(t *testing.T) {
 	carteira := Carteira{}
@@ -11,7 +13,7 @@ func TestCarteira(t *testing.T) {
 	esperado := 10
 
 	if esperado != obtido {
-		t.Errorf("\nDado: %v \nEsperado: %v \nObtido: %v", carteira, esperado, obtido)
+		t.Errorf("\nEsperado: %v \nObtido: %v", esperado, obtido)
 	}
 
 }
