@@ -1,13 +1,35 @@
 package ponteiroseerros
 
-type Carteira struct {
-	saldo int
+import (
+	"errors"
+	"fmt"
+)
+
+type Bitcoin int
+
+func (b Bitcoin) String() string {
+	return fmt.Sprintf("%d BTC", b)
 }
 
-func (c *Carteira) Depositar(valor int) {
+type Carteira struct {
+	saldo Bitcoin
+}
+
+func (c *Carteira) Depositar(valor Bitcoin) {
 	c.saldo += valor
 }
 
-func (c *Carteira) Saldo() int {
+var ErroSaldoInsuficiente = errors.New("Não é possível sacar: Saldo insuficiente")
+
+func (c *Carteira) Sacar(valor Bitcoin) error {
+	if valor > c.saldo {
+		return ErroSaldoInsuficiente
+	}
+
+	c.saldo -= valor
+	return nil
+}
+
+func (c *Carteira) Saldo() Bitcoin {
 	return c.saldo
 }
