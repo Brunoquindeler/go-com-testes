@@ -58,6 +58,6 @@ func main() {
 	fmt.Println(carteira.Saldo().String())          // 10 BTC
 	carteira.Sacar(ponteiroseerros.Bitcoin(5))      // Retira 5 do saldo.
 	fmt.Println(carteira.Saldo().String())          // 5 BTC
-	carteira.Sacar(ponteiroseerros.Bitcoin(50))     // Não é possível realizar essa transação e o saldopermanece o mesmo pois é insuficiente.
+	carteira.Sacar(ponteiroseerros.Bitcoin(50))     // Não é possível realizar essa transação e o saldo permanece o mesmo pois é insuficiente.
 	fmt.Println(carteira.Saldo().String())          // 5 BTC
 }
